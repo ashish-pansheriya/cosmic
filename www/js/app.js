@@ -123,7 +123,33 @@ angular.module('cosmic', ['ionic', 'ngCordova', 'cosmic.controllers', 'cosmic.se
 		url: '/player',
 		templateUrl: 'templates/player.html',
 		controller: 'PlayerCtrl'
-	});
+	})
+	
+	.state('browse', {
+    url: '/browse',
+    templateUrl: 'templates/browse.html',
+    controller: 'browseCtrl'
+  })
+
+  
+
+.state('searchCloud', {
+    url: '/searchcloud',
+    templateUrl: 'templates/searchCloud.html',
+    controller: 'searchCloudCtrl'
+  })
+
+  
+
+.state('share', {
+    url: '/share',
+    templateUrl: 'templates/share.html',
+    controller: 'shareCtrl'
+  });
+
+
+	
+	
 
 	// if none of the above states are matched, use this as the fallback
 	$urlRouterProvider.otherwise('/tab/playlists');
